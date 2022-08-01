@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\PetStore.Data.Models.Common\PetStore.Data.Models.Common.csproj" />
     <ProjectReference Include="..\PetStore.Data.Common\PetStore.Data.Common.csproj" />
   </ItemGroup>
   
