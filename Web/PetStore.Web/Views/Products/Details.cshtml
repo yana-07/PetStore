@@ -1,0 +1,23 @@
+﻿@using PetStore.Web.ViewModels.Products
+@model ProductDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="card" style="width: 18rem;">
+    <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Name">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text"></p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><span class="fw-bold">Price: </span>@Model.Price</li>
+        <li class="list-group-item"><span class="fw-bold">Category: </span>@Model.CategoryName</li>
+    </ul>
+</div>
+<div>
+    <a asp-action="All" class="btn btn-primary">Back</a>
+</div>
